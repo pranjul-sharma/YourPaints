@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/tt_home"
+        android:drawablePadding="@dimen/widget_margin"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/tt_requests"
+        android:drawableStart="@drawable/ic_home"
+        android:textColor="@color/colorAccent"
+        android:paddingEnd="@dimen/std_padding"
+        android:paddingStart="@dimen/no_padding"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tt_requests"
+        android:drawablePadding="@dimen/widget_margin"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:layout_margin="8dp"
+        android:drawableStart="@drawable/ic_requests"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tt_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorAccent"
+        android:paddingStart="@dimen/std_padding"
+        android:paddingEnd="@dimen/no_padding"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="@dimen/widget_margin"
+        android:layout_toEndOf="@id/tt_requests"
+        android:layout_centerVertical="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Header"
+        android:drawableStart="@drawable/ic_message"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

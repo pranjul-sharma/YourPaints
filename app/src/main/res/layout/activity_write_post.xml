@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".WritePostActivity">
+
+    <include layout="@layout/layout_toolbar" android:id="@+id/navbar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="48dp"
+        android:layout_below="@id/navbar"
+        android:layout_margin="12sp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        android:id="@+id/iv_profile"
+        android:src="@drawable/ic_write_post"
+        android:layout_height="48dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pranjul Sharma"
+        android:layout_alignTop="@id/iv_profile"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/iv_profile"
+        android:textColor="@color/colorTextPrimary"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <EditText
+        android:id="@+id/et_written_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12sp"
+        android:gravity="top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_below="@id/iv_profile"
+        android:hint="Write Something here..."
+        android:backgroundTint="@color/colorDivider"
+        android:layout_marginBottom="96dp"/>
+
+    <ImageView
+        android:id="@+id/iv_upload_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/et_written_post"
+        android:layout_alignStart="@+id/iv_profile"
+        android:layout_marginBottom="18dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:id="@+id/action_add_photo"
+        android:background="@drawable/ic_oval"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_toStartOf="@id/btn_post"
+        android:layout_alignTop="@id/btn_post"
+        android:drawableStart="@drawable/ic_add_a_photo"
+        android:drawablePadding="@dimen/appbar_padding_top"
+        android:text="add photo"
+        android:layout_marginEnd="@dimen/appbar_padding_top"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:text="post"
+        android:gravity="center"
+        android:drawablePadding="12dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/et_background"
+        android:layout_marginStart="36dp"/>
+
+</RelativeLayout>

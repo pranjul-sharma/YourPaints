@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Your Paints</string>
+    <string name="email_login">username or email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="option">or signup with</string>
+
+    <string name="facebook_application_id" translatable="false">yyyy</string>
+
+    <string name="web_client_id">928546140371-p6ti9m2840vn1lrsgui7k8if81707hka.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholder">this is a placeholder string.</string>
+    <string name="failed_post_toast">Failed to upload Image. Retry creating this post.</string>
+    <string name="success_post_toast">Posted Successfully.</string>
+    <string name="invalid_password">Please enter password.</string>
+    <string name="invalid_username">Please enter valid email address.</string>
+
+    <string name="success_login_gmail"> Logged in as : %s</string>
+    <string name="login_first">Please login first to continue</string>
+    <string name="empty_invalid_post">post content cannot be empty.</string>
+    <string name="error_url">Error while getting photo url. try reposting the same.</string>
+    <string name="something_went_wrong">Something went wrong. Try again later.</string>
+    <string name="invalid_credentails">invalid username/password.</string>
+    <string name="register">Register</string>
+    <string name="invalid_user">invalid user. please register.</string>
+    <string name="no_internet">No Internet Connection!!!</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_full_name">Provide full name to continue</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="register_failed">Registration cancelled by user.</string>
+    <string name="empty_name">Name can\'t be empty. Please provide valid name.</string>
+    <string name="something_went_wrong_db">something went wrong at db</string>
+    <string name="send_request">Send Request</string>
+    <string name="person_name">Person Name</string>
+    <string name="know_more_people">People you should know</string>
+    <string name="no_friend_req">No Pending Requests</string>
+    <string name="time_shortage_msg">This functionality is not yet available because of time shortage.</string>
+    <string name="message">Message</string>
+    <string name="select_a_pic">Select a picture</string>
+    <string name="write_post">Write Post</string>
+    <string name="user_profile">User Profile</string>
+    <string name="no_post">No post available. Start by creating one.</string>
+    <string name="progress_title">Work in Progress</string>
+    <string name="progress_message">This is just the view how the event will look like.\n\nThis functionality of the application is not yet implemented due to shortage of time. Still application is completely written considering the rubrics according to Udacity website.</string>
+    <string name="req_sent">Request Sent.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="my_prefs">my_prefs</string>
+    <string name="home_count">home_count</string>
+    <string name="message_count">message_count</string>
+    <string name="req_count">request_count</string>
+    <string name="transition_photo">shared_element_transition</string>
+    <string name="write_message">write a message...</string>
+    <string name="send">send</string>
+    <string name="edit_profile">edit profile</string>
+    <string name="cover">cover</string>
+    <string name="dummy_name">Pranjul Sharma</string>
+    <string name="dummy_email">sharma.pranjul1998@gmail.com</string>
+    <string name="dummy_clg">Studied B.tech. at FET, GKV, Haridwar</string>
+    <string name="see_more">SEE MORE</string>
+    <string name="dummy_location">Lives in Haridwar, UK</string>
+    <string name="dummy_workplace">Currently working at Wipro Technologies</string>
+</resources>

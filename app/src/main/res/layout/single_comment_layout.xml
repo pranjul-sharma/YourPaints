@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:backgroundTint="@android:color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="12sp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_comment_poster"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@color/colorPrimary"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"/>
+    <LinearLayout
+        android:layout_toEndOf="@id/image_comment_poster"
+        android:layout_width="wrap_content"
+        android:paddingEnd="28dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="2dp"
+        android:background="@drawable/ic_oval"
+        android:backgroundTint="@color/colorDivider"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/appbar_padding_top"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_comment_poster"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/appbar_padding_top"
+        android:layout_height="wrap_content"
+        android:text="Pranjul Sharma"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="This is just a dummy comment which I have placed here for texting purpose only."
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginStart="@dimen/appbar_padding_top"/>
+    </LinearLayout>
+</RelativeLayout>

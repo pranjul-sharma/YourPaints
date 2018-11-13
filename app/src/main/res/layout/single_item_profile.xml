@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/imageView2"
+        android:text="@string/edit_profile"
+        android:gravity="bottom"
+        android:fontFamily="sans-serif-smallcaps"
+        android:drawableStart="@drawable/ic_write_post"
+        android:id="@+id/tv_edit_profile"/>
+
+    <ImageView
+        android:layout_below="@id/tv_edit_profile"
+        android:src="@drawable/network"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@drawable/et_background"
+        android:padding="@dimen/appbar_padding_top"
+        android:contentDescription="@string/cover"
+        android:layout_margin="@dimen/appbar_padding_top"
+        android:id="@+id/imageView2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile_photo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@color/colorPrimaryLight" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/image_profile_photo"
+        android:background="@color/colorDividerLight"
+        android:layout_height="@dimen/appbar_padding_top"/>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="@dimen/appbar_padding_top"
+        android:layout_below="@id/image_profile_photo">
+    <TextView
+        android:id="@+id/profile_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="@string/dummy_name"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:text="@string/dummy_email"
+        android:textColor="@color/colorTextPrimary" />
+
+    <TextView
+        android:id="@+id/profile_institution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:text="@string/dummy_clg"
+        android:drawableStart="@drawable/ic_institution"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="@dimen/appbar_padding_top"
+        android:textColor="@color/colorTextSecondary"
+        tools:targetApi="m" />
+
+
+    <TextView
+        android:id="@+id/profile_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:text="@string/dummy_workplace"
+        android:drawableStart="@drawable/ic_work_box"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="@dimen/appbar_padding_top"
+        android:textColor="@color/colorTextSecondary"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/profile_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:text="@string/dummy_location"
+        android:drawableStart="@drawable/ic_location"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="@dimen/appbar_padding_top"
+        android:textColor="@color/colorTextSecondary"
+        tools:targetApi="m" />
+
+    <TextView
+        android:id="@+id/profile_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+        android:text="@string/see_more"
+        android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll"
+        android:background="@color/colorDividerLight"
+        android:layout_height="@dimen/appbar_padding_top"/>
+</RelativeLayout>

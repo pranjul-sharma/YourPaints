@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_layout"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:mContext=".LoginFragment">
+
+    <ImageView
+        android:id="@+id/iv_app_banner"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/app_banner"
+        android:padding="@dimen/std_padding"
+        android:transitionName="@string/transition_photo"
+        android:contentDescription="@string/app_name"/>
+
+    <EditText
+        android:drawableStart="@drawable/ic_username"
+        android:layout_centerInParent="true"
+        android:inputType="text"
+        android:hint="@string/email_login"
+        android:id="@+id/et_username"
+        style="@style/formInputEditText" />
+
+    <EditText
+        android:inputType="textPassword"
+        style="@style/formInputEditText"
+        android:layout_marginTop="@dimen/std_padding"
+        android:drawableStart="@drawable/ic_password"
+        android:id="@+id/et_password"
+        android:hint="@string/password"
+        android:layout_below="@id/et_username" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="@dimen/std_padding"
+        android:text="@string/login"
+        android:layout_below="@id/et_password"
+        style="@style/btnForm" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_alignStart="@id/et_username"
+        android:layout_alignEnd="@id/et_username"
+        android:layout_marginTop="@dimen/margin_32dp"
+        android:layout_below="@id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/view_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_negative"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:text="@string/option"
+        android:id="@+id/signup_text"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorTextPrimary" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/view_divider"
+        android:layout_alignEnd="@id/view_divider"
+        android:layout_marginTop="@dimen/std_padding"
+        android:layout_below="@id/signup_text"/>
+
+</RelativeLayout>

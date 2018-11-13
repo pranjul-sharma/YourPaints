@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_full_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:contentDescription="@string/enter_full_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="@dimen/std_padding"
+        android:paddingStart="@dimen/std_padding"
+        android:fontFamily="sans-serif-smallcaps"
+        android:id="@+id/tt_dialog_heading"
+        android:paddingEnd="@dimen/std_padding"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_full_name"
+        android:layout_width="match_parent"
+        android:padding="@dimen/std_padding"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tt_dialog_heading"
+        android:theme="@style/Theme.AppCompat">
+        <EditText
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorTextPrimary"
+            android:id="@+id/et_full_name"
+            android:hint="@string/full_name"
+            android:textColorHint="@color/colorAccent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_continue"
+        android:text="@string/ok"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorAccent"
+        android:layout_alignEnd="@id/til_full_name"
+        android:layout_below="@id/til_full_name"
+        android:layout_marginEnd="@dimen/std_padding"
+        android:layout_marginBottom="@dimen/std_padding"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/btn_cancel"
+        android:layout_toStartOf="@id/btn_continue"
+        android:text="@string/cancel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/til_full_name"
+        android:layout_marginBottom="@dimen/std_padding"
+        android:layout_marginEnd="@dimen/margin_32dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

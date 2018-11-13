@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout_write_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/appbar_padding_top"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/et_write_post"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@drawable/et_bg_home"
+            android:hint="Write a post..."
+            android:maxLines="3"
+            android:padding="20sp"
+            android:textColorHint="@color/colorTextSecondary" />
+
+
+        <TextView
+            android:id="@+id/tv_add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/et_write_post"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/appbar_padding_top"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:drawablePadding="@dimen/appbar_padding_top"
+            android:drawableStart="@drawable/ic_add_a_photo"
+            android:fontFamily="sans-serif-monospace"
+            android:gravity="bottom"
+            android:text="Add Photos"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorTextSecondary" />
+
+        <TextView
+            android:id="@+id/tv_write_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_add_photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:layout_toStartOf="@id/tv_add_photo"
+            android:drawablePadding="@dimen/appbar_padding_top"
+            android:drawableStart="@drawable/ic_write_post"
+            android:fontFamily="sans-serif-monospace"
+            android:gravity="bottom"
+            android:text="Write Post or"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorTextSecondary" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12sp"
+        android:background="@color/colorDividerLight" />
+</LinearLayout>

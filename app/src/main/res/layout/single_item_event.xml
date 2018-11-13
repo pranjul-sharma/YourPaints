@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@color/colorPrimaryLight"
+        android:padding="@dimen/appbar_padding_top"
+        android:contentDescription="event_banner"
+        android:layout_margin="@dimen/appbar_padding_top"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tv_event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Event Name Here"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/appbar_padding_top"
+        android:drawableStart="@drawable/ic_event"
+        android:paddingEnd="@dimen/appbar_padding_top"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Apr 25, 2018 10:00 AM"
+        android:textColor="@color/colorTextPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_event_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/appbar_padding_top"
+        android:drawableStart="@drawable/ic_location_blue"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:paddingEnd="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:fontFamily="sans-serif-monospace"
+        android:text="Faculty of Engineering and Technology, GKV, Haridwar"
+        android:textColor="@color/colorTextPrimary"
+        />
+
+    <TextView
+        android:id="@+id/tv_event_organizer"
+        android:layout_width="wrap_content"
+        android:paddingEnd="@dimen/appbar_padding_top"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/appbar_padding_top"
+        android:drawableStart="@drawable/ic_person"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif-monospace"
+        android:text="Event organized by Dept of CSE, FET, GKV"
+        android:textColor="@color/colorTextPrimary"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16sp"
+        android:background="@color/colorDivider"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingEnd="@dimen/appbar_padding_top"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/appbar_padding_top"
+        android:drawableStart="@drawable/ic_write_post_blue"
+        android:drawableTint="@color/colorPrimary"
+        android:drawablePadding="16dp"
+        android:layout_marginBottom="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:fontFamily="sans-serif-monospace"
+        android:text="Event updates by organizers"
+        android:textColor="@color/colorTextSecondary"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        android:background="@color/colorDivider"/>
+
+</LinearLayout>
